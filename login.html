@@ -1,0 +1,23 @@
+<!--#login-->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+	</head>
+	<body>
+	<h1>{{title}}</h1>
+	<h3>login or create a new account with the sign up button</h3>
+		<form action="/loginAuth" method="POST">
+		<input type="text" name="username" placeholder="username" required/></br>
+		<input type="password" name="password" placeholder="password" required/></br>
+		<input type="submit" value = Login>
+		{% if error %}
+			<p class="error"><strong>Error:</strong>{{error}}</p>
+		{% endif %}
+		</form>
+		<form action="/register" method='GET'>
+		<input type="submit" value="Sign Up"/></br>
+		</form>
+	</body>
+</html>

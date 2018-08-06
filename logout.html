@@ -1,0 +1,12 @@
+<html lang="en">
+		<meta charset="UTF-8">
+	<body>
+	<h1>You have successfully logged out ! See you soon :) </h1>
+		<form action="/" method="GET">
+		<input type="submit" value = home>
+		{% if error %}
+			<p class="error"><strong>Error:</strong>{{error}}</p>
+		{% endif %}
+		</form>
+	</body>
+</html>
